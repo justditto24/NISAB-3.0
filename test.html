@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Test html</title>
+    <style>
+        * {
+            padding:0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        .box {
+            /*display: inline;*/
+           padding:20px;
+           background-color: grey;
+        }
+          
+         .container {
+           display: grid;
+           /*grid-template-columns:1fr 1fr 1fr 1fr 1fr;*/
+           grid-template-columns: repeat(5 1fr);
+           gap: 10px;
+           /*grid-template-columns: 1fr 2fr 1fr;*/
+           /* we used justify content for main axis*/
+           /* MAIN AXIS */
+           
+           
+        /* flex-direction:row;*/
+        /* flex-direction:row-reverse;*/
+          /*margin-left: 30px;*/
+         /*flex-direction: column-reverse;*/
+         /*justify-content: center ;*/
+         /*justify-content:flex-start;*/
+         /*justify-content: space-between;*/
+         /*justify-content: space-around;*/
+         /*justify-content:space-evenly;*/
+         
+         
+         /* we use align-items for cross axis*/
+         
+         /*align-items:stretch;*/
+         /*align-items: center;*/
+         /*align-items: flex-start;*/
+         /*align-items:center;*/
+        }
+        
+        .box1 {
+         /*grid-column:  span 2;*/
+        }
+        
+        .box2 {
+            /* grid-column: span 2;*/
+        }
+        .items {
+            display: flex;
+            padding: 10px;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+       <div container class="box box1">
+        1
+         </div>    
+    
+         <div container class="box box2">
+          2
+      </div>
+    
+       <div container class="box box3">
+            3
+        </div>
+        
+      <div container class="box box4">
+           4 
+        </div> 
+        
+        <div container class="box box 5">
+            5
+        </div>
+    </div>
+    <nav>
+        <a href="#" class="items">Home</a>
+        <a href="#" class="items">About</a>
+        <a href="#" class="items">Contact</a>
+    </nav>
+</body>
+
+</html>
